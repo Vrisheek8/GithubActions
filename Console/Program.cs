@@ -84,16 +84,7 @@ namespace GithubActionsLab
         // Implement this method following a similar pattern as above
         public static double Power(string x, string y)
         {
-            // Check for null inputs
-            if (x == null || y == null)
-                throw new ArgumentNullException("Inputs cannot be null");
-
-            // Try to parse inputs; if parsing fails, throw a FormatException
-            if (!double.TryParse(x, out double baseNum) || !double.TryParse(y, out double exponent))
-                throw new FormatException("Inputs must be valid numbers");
-
-            // Calculate and return the power
-            return Math.Pow(baseNum, exponent);
+            return Math.Pow(double.Parse(x), double.Parse(y));
         }
     }
 
