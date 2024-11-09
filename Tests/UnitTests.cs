@@ -48,7 +48,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Null_vrisheek()
+        public void Power_Null_Panjala()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Power("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, "1"));
