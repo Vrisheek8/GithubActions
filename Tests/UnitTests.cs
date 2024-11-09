@@ -35,7 +35,7 @@ namespace GithubActionsLab
         public void Power_Valid_vrisheek()
         {
             Assert.AreEqual(1, Program.Power("1", "5"));
-            Assert.AreEqual(7, Program.Power("3", "3"));
+            Assert.AreEqual(27, Program.Power("3", "3"));
             Assert.AreEqual(25, Program.Power("5", "2"));
         }
 
